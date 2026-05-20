@@ -1,0 +1,16 @@
+# Netlify chỉ host file tĩnh. API (/api/*) cần Node server — dùng Render/Railway/VPS để chạy đủ tính năng.
+# Publish: thư mục dist (chạy "npm run build" trước khi deploy)
+
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/"
+  to = "/game/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/game"
+  to = "/game/index.html"
+  status = 200

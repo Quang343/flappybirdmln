@@ -1,0 +1,7 @@
+{
+  "name": "flappy-bird-quiz-game",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  }
+}

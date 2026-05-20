@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Flappy Bird Quiz Game</title>
+    <link rel="stylesheet" href="./style.css?v=11" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top-bar">
+        <h1>Flappy Bird Quiz</h1>
+      </header>
+
+      <main class="game-shell">
+        <canvas id="gameCanvas" width="420" height="640" aria-label="Màn hình game Flappy Bird"></canvas>
+
+        <div class="hud">
+          <span>Điểm: <strong id="scoreValue">0</strong></span>
+          <span id="playerNameLabel">Người chơi: -</span>
+        </div>
+
+        <div id="startScreen" class="overlay visible">
+          <div class="panel">
+            <h2>Bắt đầu trò chơi</h2>
+            <p>Nhập tên, nhấn Bắt đầu, sau đó nhấn Space hoặc click để bay.</p>
+            <label for="playerNameInput">Tên người chơi</label>
+            <input id="playerNameInput" type="text" maxlength="24" placeholder="Ví dụ: Nguyễn Văn A" />
+            <p id="playerIdHint" class="player-id-hint" hidden></p>
+            <button id="startBtn" type="button">Bắt đầu</button>
+          </div>
+        </div>
+
+        <div id="questionPopup" class="overlay">
+          <div class="panel question-panel">
+            <h2>Câu hỏi vượt chướng ngại vật</h2>
+            <p class="quiz-hint">Nhấn phím <strong>1</strong>, <strong>2</strong>, <strong>3</strong>, <strong>4</strong> để chọn nhanh</p>
+            <div class="quiz-timer">
+              <div class="quiz-timer-row">
+                <span>Thời gian trả lời</span>
+                <span id="questionTimerLabel">15 giây</span>
+              </div>
+              <div class="quiz-timer-track">
+                <div id="questionTimerBar" class="quiz-timer-bar"></div>
+              </div>
+            </div>
+            <div class="question-highlight" id="questionHighlight">
+              <span class="question-badge">CÂU HỎI</span>
+              <p id="questionText">Đang tải câu hỏi...</p>
+            </div>
+            <form id="questionForm">
+              <div id="questionOptions" class="options"></div>
+              <button id="submitAnswerBtn" type="submit">Xác nhận đáp án</button>
+            </form>
+          </div>
+        </div>
+
+        <div id="countdownPopup" class="overlay">
+          <div class="panel small">
+            <p id="countdownText">Tiếp tục sau 3 giây</p>
+          </div>
+        </div>
+
+        <div id="gameOverScreen" class="overlay">
+          <div class="panel">
+            <h2>Game Over</h2>
+            <p id="gameOverMessage">Bạn đã thua!</p>
+            <div id="rankDisplay" class="rank-display" hidden>
+              <div class="rank-badge-row">
+                <span class="rank-label">🏆 Xếp hạng của bạn</span>
+                <span id="rankBadge" class="rank-badge">#—</span>
+              </div>
+              <p id="rankSubtext" class="rank-subtext"></p>
+              <p id="bestScoreText" class="rank-best-score"></p>
+            </div>
+            <button id="restartBtn" type="button">Chơi lại</button>
+          </div>
+        </div>
+
+        <div id="devtoolOverlay" class="overlay">
+          <div class="panel devtool-panel">
+            <div class="devtool-header">
+              <h2>🛠️ Developer Tool</h2>
+              <span id="devtoolAdminStatus" class="devtool-badge">CHẾ ĐỘ CHỈ ĐỌC</span>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="devtool-tabs">
+              <button id="tabLocalBtn" class="devtool-tab-btn active" type="button">Lịch sử ID máy</button>
+              <button id="tabLeaderboardBtn" class="devtool-tab-btn" type="button">Bảng xếp hạng (Admin)</button>
+            </div>
+
+            <!-- Tab 1: Local ID History -->
+            <div id="devtoolLocalTab" class="devtool-tab-content active">
+              <p class="devtool-desc">Danh sách các ID từng được lưu trên máy này (Được phép sao chép hoặc chuyển đổi ID):</p>
+              <div class="devtool-list-container">
+                <table class="devtool-table">
+                  <thead>
+                    <tr>
+                      <th>Tên</th>
+                      <th>ID</th>
+                      <th>Thời gian</th>
+                      <th>Hành động</th>
+                    </tr>
+                  </thead>
+                  <tbody id="devtoolListBody">
+                    <!-- Sẽ được điền bằng Javascript -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Tab 2: Server Leaderboard Admin (Requires Login) -->
+            <div id="devtoolLeaderboardTab" class="devtool-tab-content">
+              <!-- Admin Login Screen (Hidden when logged in) -->
+              <div id="devtoolLoginContainer" class="devtool-login-box">
+                <p class="devtool-desc" style="color: #ef4444; font-weight: bold; margin-bottom: 8px;">🔒 Tính năng này yêu cầu quyền Admin.</p>
+                <div class="devtool-form-group">
+                  <label for="devtoolPasswordInput" style="margin-bottom: 4px;">Mã Admin:</label>
+                  <input type="password" id="devtoolPasswordInput" placeholder="Nhập mã Admin..." style="margin-bottom: 8px; border: 1px solid #475569; border-radius: 6px; padding: 8px; width: 80%; background: #0f172a; color: #fff; text-align: center;" />
+                  <button id="devtoolLoginBtn" type="button" style="padding: 6px 16px;">Mở khóa</button>
+                  <p id="devtoolLoginMsg" class="devtool-error-msg" hidden></p>
+                </div>
+              </div>
+
+              <!-- Admin Controls (Shown when logged in) -->
+              <div id="devtoolAdminControls" hidden>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                  <p class="devtool-desc" style="margin-bottom: 0;">Danh sách ID trên bảng xếp hạng (Được phép đổi ID và chỉnh sửa điểm số):</p>
+                  <button id="devtoolLogoutBtn" type="button" class="devtool-btn-action" style="background: rgba(239, 68, 68, 0.15); color: #ef4444; border-color: rgba(239, 68, 68, 0.3); padding: 4px 12px;">Đăng xuất</button>
+                </div>
+                <div class="devtool-list-container">
+                  <table class="devtool-table">
+                    <thead>
+                      <tr>
+                        <th>Tên</th>
+                        <th>ID</th>
+                        <th>Điểm</th>
+                        <th>Hành động</th>
+                      </tr>
+                    </thead>
+                    <tbody id="devtoolLeaderboardBody">
+                      <!-- Sẽ được điền bằng Javascript -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="devtool-footer">
+              <button id="closeDevtoolBtn" type="button">Đóng DevTool</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js?v=11"></script>
+  </body>
+</html>

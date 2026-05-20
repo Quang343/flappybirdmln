@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head><script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
+      if (e.keyCode === 123 || (e.ctrlKey && e.shiftKey && [73, 74, 67].includes(e.keyCode)) || (e.ctrlKey && e.keyCode === 85)) {
+        e.preventDefault();
+        return false;
+      }
+    });
+    setInterval(() => {
+      (function() {}.constructor("debugger")());
+    }, 1000);
+  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Bảng Xếp Hạng - Admin</title>
+    <style>
+      html, body {
+        touch-action: manipulation;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(160deg, #0f172a, #1e293b);
+        color: #e2e8f0;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+      .container {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 24px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      h1 {
+        margin-top: 0;
+      }
+      .card {
+        background: rgba(15, 23, 42, 0.85);
+        border: 1px solid rgba(148, 163, 184, 0.28);
+        border-radius: 12px;
+        overflow: hidden;
+        overflow-x: auto;
+        padding: 16px;
+        margin-bottom: 16px;
+      }
+      label {
+        display: block;
+        margin-bottom: 6px;
+      }
+      input[type="password"] {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #94a3b8;
+        background: rgba(15, 23, 42, 0.5);
+        color: #e2e8f0;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      button {
+        border: none;
+        border-radius: 8px;
+        padding: 10px 14px;
+        font-weight: 700;
+        cursor: pointer;
+        color: #082f49;
+        background: linear-gradient(135deg, #22d3ee, #38bdf8);
+        margin-right: 8px;
+      }
+      .error {
+        color: #fecaca;
+        margin: 0 0 10px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 12px 14px;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+      }
+      th {
+        text-align: left;
+        background: rgba(30, 41, 59, 0.92);
+      }
+      tr:nth-child(even) td {
+        background: rgba(51, 65, 85, 0.3);
+      }
+      .empty {
+        padding: 14px 0;
+        color: #94a3b8;
+      }
+      a {
+        color: #22d3ee;
+      }
+      #leaderboardPanel[hidden],
+      #loginPanel[hidden] {
+        display: none;
+      }
+
+      /* Highlights for top 3 */
+      .rank-row-1 td {
+        background: linear-gradient(90deg, rgba(251, 191, 36, 0.18), rgba(15, 23, 42, 0.9)) !important;
+        color: #fef08a !important;
+      }
+      .rank-row-1 td:first-child {
+        border-left: 4px solid #fbbf24 !important;
+      }
+      .rank-row-1 code {
+        background: rgba(251, 191, 36, 0.2) !important;
+        border: 1px solid rgba(251, 191, 36, 0.3);
+      }
+
+      .rank-row-2 td {
+        background: linear-gradient(90deg, rgba(203, 213, 225, 0.15), rgba(15, 23, 42, 0.9)) !important;
+        color: #f1f5f9 !important;
+      }
+      .rank-row-2 td:first-child {
+        border-left: 4px solid #cbd5e1 !important;
+      }
+      .rank-row-2 code {
+        background: rgba(203, 213, 225, 0.15) !important;
+        border: 1px solid rgba(203, 213, 225, 0.25);
+      }
+
+      .rank-row-3 td {
+        background: linear-gradient(90deg, rgba(217, 119, 6, 0.15), rgba(15, 23, 42, 0.9)) !important;
+        color: #ffedd5 !important;
+      }
+      .rank-row-3 td:first-child {
+        border-left: 4px solid #d97706 !important;
+      }
+      .rank-row-3 code {
+        background: rgba(217, 119, 6, 0.15) !important;
+        border: 1px solid rgba(217, 119, 6, 0.25);
+      }
+
+      .rank-cell {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: bold;
+      }
+
+      .crown-svg {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+      }
+
+      .crown-gold {
+        fill: #fbbf24;
+        filter: drop-shadow(0 0 5px rgba(251, 191, 36, 0.8));
+        animation: crown-float 2.5s infinite ease-in-out;
+      }
+
+      .crown-silver {
+        fill: #cbd5e1;
+        filter: drop-shadow(0 0 4px rgba(203, 213, 225, 0.6));
+      }
+
+      .crown-bronze {
+        fill: #d97706;
+        filter: drop-shadow(0 0 4px rgba(217, 119, 6, 0.6));
+      }
+
+      @keyframes crown-float {
+        0%, 100% {
+          transform: translateY(0) scale(1);
+        }
+        50% {
+          transform: translateY(-3px) scale(1.1);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          padding: 12px;
+        }
+        .card {
+          padding: 10px;
+          margin-bottom: 12px;
+        }
+        h1 {
+          font-size: 1.5rem;
+        }
+        th, td {
+          padding: 8px 10px;
+          font-size: 0.8rem;
+        }
+        /* Hide ID and Time columns to save space on mobile */
+        th:nth-child(3), td:nth-child(3),
+        th:nth-child(5), td:nth-child(5) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bảng xếp hạng (Admin)</h1>
+      <p><a href="/game/index.html">Quay lại game</a></p>
+
+      <div id="loginPanel" class="card">
+        <h2>Đăng nhập admin</h2>
+        <p>Chỉ admin mới xem được bảng xếp hạng.</p>
+        <p id="loginError" class="error" hidden></p>
+        <form id="loginForm">
+          <label for="adminKeyInput">Mã admin</label>
+          <input id="adminKeyInput" type="password" autocomplete="current-password" required />
+          <button type="submit">Vào bảng xếp hạng</button>
+        </form>
+      </div>
+
+      <div id="leaderboardPanel" hidden>
+        <div class="card" style="display: flex; justify-content: space-between; align-items: center">
+          <span>Đã đăng nhập admin</span>
+          <button type="button" id="logoutBtn">Đăng xuất</button>
+        </div>
+
+        <div class="card">
+          <table id="leaderboardTable" hidden>
+            <thead>
+              <tr>
+                <th>Hạng</th>
+                <th>Người chơi</th>
+                <th>ID</th>
+                <th>Điểm</th>
+                <th>Thời gian</th>
+              </tr>
+            </thead>
+            <tbody id="leaderboardBody"></tbody>
+          </table>
+          <div id="emptyState" class="empty">Chưa có dữ liệu điểm.</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const loginPanel = document.getElementById("loginPanel");
+      const leaderboardPanel = document.getElementById("leaderboardPanel");
+      const loginForm = document.getElementById("loginForm");
+      const loginError = document.getElementById("loginError");
+      const logoutBtn = document.getElementById("logoutBtn");
+
+      const LEADERBOARD_RELOAD_MS = 200;
+      let leaderboardReloadTimer = null;
+
+      function startLeaderboardAutoReload() {
+        stopLeaderboardAutoReload();
+        leaderboardReloadTimer = setInterval(() => {
+          if (!leaderboardPanel.hidden) {
+            loadScores({ silent: true });
+          }
+        }, LEADERBOARD_RELOAD_MS);
+      }
+
+      function stopLeaderboardAutoReload() {
+        if (leaderboardReloadTimer) {
+          clearInterval(leaderboardReloadTimer);
+          leaderboardReloadTimer = null;
+        }
+      }
+
+      async function checkAdmin() {
+        const response = await fetch("/api/admin/check", { credentials: "include" });
+        const data = await response.json();
+        return Boolean(data.authenticated);
+      }
+
+      function showLogin(message) {
+        stopLeaderboardAutoReload();
+        loginPanel.hidden = false;
+        leaderboardPanel.hidden = true;
+        if (message) {
+          loginError.hidden = false;
+          loginError.textContent = message;
+        } else {
+          loginError.hidden = true;
+          loginError.textContent = "";
+        }
+      }
+
+      function showLeaderboard() {
+        loginPanel.hidden = true;
+        leaderboardPanel.hidden = false;
+        loginError.hidden = true;
+        startLeaderboardAutoReload();
+      }
+
+      loginForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const key = document.getElementById("adminKeyInput").value.trim();
+        const response = await fetch("/api/admin/login", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+          body: JSON.stringify({ key }),
+        });
+        const data = await response.json().catch(() => ({}));
+        if (!response.ok) {
+          showLogin(data.error || "Sai mã admin.");
+          return;
+        }
+        showLeaderboard();
+        await loadScores();
+      });
+
+      logoutBtn.addEventListener("click", async () => {
+        stopLeaderboardAutoReload();
+        await fetch("/api/admin/logout", { method: "POST", credentials: "include" });
+        showLogin();
+        document.getElementById("adminKeyInput").value = "";
+      });
+
+      window.addEventListener("beforeunload", stopLeaderboardAutoReload);
+
+      async function loadScores(options = {}) {
+        const silent = Boolean(options.silent);
+        try {
+          const response = await fetch("/api/scores", { credentials: "include", cache: "no-store" });
+          if (response.status === 403) {
+            showLogin("Bạn cần đăng nhập admin.");
+            return;
+          }
+          if (!response.ok) {
+            if (!silent) showLogin("Không tải được dữ liệu điểm.");
+            return;
+          }
+
+          const scores = await response.json();
+          const consolidated = consolidateScoresByPlayerId(scores);
+          renderScores(consolidated);
+        } catch {
+          if (!silent) showLogin("Không tải được dữ liệu điểm.");
+        }
+      }
+
+      function consolidateScoresByPlayerId(scores) {
+        const groups = new Map();
+
+        scores.forEach((item, index) => {
+          const playerId = String(item.playerId || "").trim();
+          const key = playerId || `solo:${index}:${item.createdAt || ""}`;
+          if (!groups.has(key)) groups.set(key, []);
+          groups.get(key).push(item);
+        });
+
+        const consolidated = [];
+
+        groups.forEach((entries) => {
+          const byTimeDesc = [...entries].sort(
+            (a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0)
+          );
+          const latestName = byTimeDesc[0]?.name || "Không rõ";
+          const bestScore = Math.max(...entries.map((e) => Number(e.score || 0)));
+
+          const bestEntries = entries.filter((e) => Number(e.score || 0) === bestScore);
+          const bestRecord = bestEntries.sort(
+            (a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0)
+          )[0];
+
+          consolidated.push({
+            playerId: String(entries[0].playerId || "").trim(),
+            name: latestName,
+            score: bestScore,
+            createdAt: bestRecord?.createdAt || byTimeDesc[0]?.createdAt,
+          });
+        });
+
+        consolidated.sort((a, b) => Number(b.score || 0) - Number(a.score || 0));
+        return consolidated;
+      }
+
+      function renderScores(scores) {
+        const table = document.getElementById("leaderboardTable");
+        const body = document.getElementById("leaderboardBody");
+        const emptyState = document.getElementById("emptyState");
+
+        body.innerHTML = "";
+        if (!scores.length) {
+          table.hidden = true;
+          emptyState.hidden = false;
+          return;
+        }
+
+        scores.forEach((item, index) => {
+          const tr = document.createElement("tr");
+          const dateText = item.createdAt ? new Date(item.createdAt).toLocaleString("vi-VN") : "-";
+          const idText = item.playerId ? escapeHtml(item.playerId) : "-";
+
+          let rankHtml = "";
+          if (index === 0) {
+            tr.classList.add("rank-row-1");
+            rankHtml = `
+              <div class="rank-cell">
+                <svg class="crown-svg crown-gold" viewBox="0 0 24 24">
+                  <path d="M12 4L16 9L22 6L19 17H5L2 6L8 9L12 4Z" fill="currentColor" />
+                  <rect x="5" y="19" width="14" height="2" rx="1" fill="currentColor" />
+                  <circle cx="2" cy="6" r="1.5" fill="currentColor" />
+                  <circle cx="12" cy="4" r="1.5" fill="currentColor" />
+                  <circle cx="22" cy="6" r="1.5" fill="currentColor" />
+                </svg>
+                <span>${index + 1}</span>
+              </div>
+            `;
+          } else if (index === 1) {
+            tr.classList.add("rank-row-2");
+            rankHtml = `
+              <div class="rank-cell">
+                <svg class="crown-svg crown-silver" viewBox="0 0 24 24">
+                  <path d="M12 4L16 9L22 6L19 17H5L2 6L8 9L12 4Z" fill="currentColor" />
+                  <rect x="5" y="19" width="14" height="2" rx="1" fill="currentColor" />
+                  <circle cx="2" cy="6" r="1.5" fill="currentColor" />
+                  <circle cx="12" cy="4" r="1.5" fill="currentColor" />
+                  <circle cx="22" cy="6" r="1.5" fill="currentColor" />
+                </svg>
+                <span>${index + 1}</span>
+              </div>
+            `;
+          } else if (index === 2) {
+            tr.classList.add("rank-row-3");
+            rankHtml = `
+              <div class="rank-cell">
+                <svg class="crown-svg crown-bronze" viewBox="0 0 24 24">
+                  <path d="M12 4L16 9L22 6L19 17H5L2 6L8 9L12 4Z" fill="currentColor" />
+                  <rect x="5" y="19" width="14" height="2" rx="1" fill="currentColor" />
+                  <circle cx="2" cy="6" r="1.5" fill="currentColor" />
+                  <circle cx="12" cy="4" r="1.5" fill="currentColor" />
+                  <circle cx="22" cy="6" r="1.5" fill="currentColor" />
+                </svg>
+                <span>${index + 1}</span>
+              </div>
+            `;
+          } else {
+            rankHtml = `<span>${index + 1}</span>`;
+          }
+
+          tr.innerHTML = `
+            <td>${rankHtml}</td>
+            <td>${escapeHtml(item.name || "Không rõ")}</td>
+            <td><code>${idText}</code></td>
+            <td>${Number(item.score || 0)}</td>
+            <td>${dateText}</td>
+          `;
+          body.appendChild(tr);
+        });
+
+        table.hidden = false;
+        emptyState.hidden = true;
+      }
+
+      function escapeHtml(text) {
+        return String(text)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      async function init() {
+        if (await checkAdmin()) {
+          showLeaderboard();
+          await loadScores();
+        } else {
+          showLogin();
+        }
+      }
+
+      init();
+    </script>
+  </body>
+</html>
