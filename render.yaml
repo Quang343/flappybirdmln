@@ -1,0 +1,15 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: flappy-bird-quiz-game
+    runtime: node
+    plan: free
+    rootDir: flappy-bird-quiz-game
+    buildCommand: npm install && npm run build
+    startCommand: node dist/server.js
+    healthCheckPath: /game/index.html
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: ADMIN_KEY
+        sync: false
