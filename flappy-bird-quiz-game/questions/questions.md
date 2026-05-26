@@ -1,241 +1,241 @@
 # Questions
 
 ## Question 1
-Câu hỏi: Triết gia nào nổi tiếng với câu nói "Tôi chỉ biết rằng tôi không biết gì cả"?
-A. Aristotle
-B. Socrates
-C. Descartes
-D. Kant
+Câu hỏi: Tên gọi đầy đủ của quy luật "lượng – chất" là gì?
+A. Quy luật phủ định của phủ định
+B. Quy luật chuyển hoá từ những thay đổi về lượng dẫn đến những thay đổi về chất và ngược lại
+C. Quy luật mâu thuẫn của các mặt đối lập
+D. Quy luật thống nhất biện chứng của tự nhiên
 Đáp án: B
 
 ## Question 2
-Câu hỏi: Trong triết học Plato, "thế giới của các ý niệm" (Forms/Ideas) được hiểu là gì?
-A. Thế giới vật chất quan sát được bằng giác quan
-B. Thế giới các bản thể hoàn hảo, vĩnh cửu, mà vật thể chỉ là bản sao
-C. Tập hợp các luật tự nhiên trong khoa học
-D. Hệ thống pháp luật của nhà nước
-Đáp án: B
+Câu hỏi: "Chất" của một sự vật được hiểu là gì?
+A. Cái làm cho sự vật là chính nó, để phân biệt nó với cái khác
+B. Toàn bộ các đặc điểm có thể đo đếm bằng số
+C. Bản thể siêu hình tách rời khỏi sự vật
+D. Cảm nhận chủ quan của con người về sự vật
+Đáp án: A
 
 ## Question 3
-Câu hỏi: Khẩu hiệu "Cogito, ergo sum" (Tôi tư duy, vậy tôi tồn tại) thuộc về triết gia nào?
-A. David Hume
-B. René Descartes
-C. John Locke
-D. Baruch Spinoza
-Đáp án: B
-
-## Question 4
-Câu hỏi: "Mệnh lệnh cận tự" (categorical imperative) là trung tâm đạo đức của triết gia nào?
-A. Jeremy Bentham
-B. Friedrich Nietzsche
-C. Immanuel Kant
-D. Jean-Jacques Rousseau
+Câu hỏi: "Lượng" của một sự vật được hiểu là gì?
+A. Bản chất bên trong làm nên sự vật
+B. Tên gọi và ý nghĩa biểu tượng của vật
+C. Quy mô, số lượng, mức độ, tốc độ vận động của vật
+D. Mặt đối lập tuyệt đối với chất
 Đáp án: C
 
+## Question 4
+Câu hỏi: "Bước nhảy" trong quy luật lượng – chất là gì?
+A. Sự dao động qua lại của sự vật
+B. Sự tăng nhanh đơn thuần về số lượng
+C. Sự phủ định sạch trơn sự vật ban đầu
+D. Sự chuyển hoá từ chất cũ sang chất mới
+Đáp án: D
+
 ## Question 5
-Câu hỏi: Friedrich Nietzsche nổi tiếng với tuyên bố nào về đạo đức truyền thống phương Tây?
-A. "Đạo đức là hạnh phúc cho số đông"
-B. "Đạo đức phổ biến dựa trên đức tin tôn giáo đã chết"
-C. "Đạo đức chỉ là sản phẩm của kinh tế"
-D. "Đạo đức bắt nguồn từ lý tính thuần túy"
+Câu hỏi: Mối quan hệ giữa lượng và chất là?
+A. Lượng quyết định, chất hoàn toàn bị động
+B. Lượng đổi dẫn đến chất đổi, chất mới lại sinh ra lượng mới
+C. Hai phạm trù độc lập, không tương tác với nhau
+D. Chất quyết định lượng theo một chiều duy nhất
 Đáp án: B
 
 ## Question 6
-Câu hỏi: Chủ nghĩa duy vật lịch sử gắn liền với tư tưởng của ai?
-A. Georg Wilhelm Friedrich Hegel
-B. Karl Marx
-C. Auguste Comte
-D. Thomas Hobbes
-Đáp án: B
-
-## Question 7
-Câu hỏi: Jean-Paul Sartre thuộc trường phái triết học nào, nhấn mạnh "tự do và trách nhiệm" của con người?
-A. Thực chứng logic
-B. Hiện tượng học
-C. Hiện sinh
-D. Kinh nghiệm luận
+Câu hỏi: Câu "Có công mài sắt, có ngày nên kim" minh hoạ điều gì?
+A. Mâu thuẫn nội tại làm sắt tự biến thành kim
+B. Chất của sắt vốn dĩ đã là kim từ đầu
+C. Tích luỹ đủ về lượng sẽ dẫn đến biến đổi về chất
+D. Phủ định biện chứng của cây sắt
 Đáp án: C
 
-## Question 8
-Câu hỏi: Trong tư tưởng Khổng Tử, đức tính cốt lõi để xây dựng xã hội hài hòa là gì?
-A. Nhân (nhân ái)
-B. Vô thường
-C. Thực dụng tối đa
-D. Ý chí quyền lực
+## Question 7
+Câu hỏi: "Tức nước vỡ bờ" thể hiện điều gì?
+A. Lượng tích đủ vượt qua điểm nút tạo nên bước nhảy về chất
+B. Chất của nước phủ định chất của bờ
+C. Mâu thuẫn ngẫu nhiên không thuộc quy luật nào
+D. Lượng và chất tách rời, không liên quan đến nhau
 Đáp án: A
+
+## Question 8
+Câu hỏi: "Góp gió thành bão" nói lên điều gì?
+A. Chất của bão hoàn toàn tách rời với gió
+B. Tích luỹ dần về lượng sẽ tạo ra chất mới
+C. Mâu thuẫn nội tại của gió sinh ra bão
+D. Bước nhảy đột biến không cần quá trình tích luỹ
+Đáp án: B
 
 ## Question 9
-Câu hỏi: Khái niệm "Đạo" (Tao) trong Lão Tử thường được hiểu là gì?
-A. Bộ luật cứng nhắc của nhà nước
-B. Nguyên lý tự nhiên, vô vi, làm mẫu cho cách sống và cai trị
-C. Ý thức tuyệt đối của con người
-D. Mục tiêu hạnh phúc tính toán
-Đáp án: B
+Câu hỏi: "Năng nhặt chặt bị" gắn với nội dung nào?
+A. Lượng đổi nhưng chất luôn bất biến
+B. Chất luôn xuất hiện trước lượng
+C. Tích luỹ nhỏ về lượng sẽ tạo nên chất mới
+D. Phủ định của phủ định trong việc nhặt nhạnh
+Đáp án: C
 
 ## Question 10
-Câu hỏi: Thomas Hobbes mô tả "trạng thái tự nhiên" của con người là gì?
-A. Hòa bình do lý tính tự phát
-B. Cuộc sống "cô độc, nghèo khổ, bần tiện, hung dữ và thiểu thốn"
-C. Thời kỳ không có ngôn ngữ
-D. Xã hội không tầng lớp
-Đáp án: B
-
-## Question 11
-Câu hỏi: "Khế ước xã hội" (social contract) được Jean-Jacques Rousseau dùng để giải thích điều gì?
-A. Nguồn gốc hợp pháp của quyền lực chính trị dựa trên ý chí chung
-B. Sự tồn tại của các ý niệm siêu hình
-C. Cơ chế thị trường tự do
-D. Bản chất của không-thời gian
+Câu hỏi: "Kiến tha lâu cũng đầy tổ" minh hoạ điều gì?
+A. Tích luỹ kiên trì về lượng sẽ làm chất thay đổi
+B. Chất của tổ luôn cố định, không phụ thuộc kiến
+C. Mâu thuẫn giữa kiến và tổ tạo ra cái mới
+D. Bước nhảy ngẫu nhiên không cần lượng
 Đáp án: A
 
+## Question 11
+Câu hỏi: "Nước chảy đá mòn" cho thấy điều gì?
+A. Đá yếu hơn nước về bản chất
+B. Mâu thuẫn giữa hai mặt đối lập là nguồn gốc phát triển
+C. Lượng tác động nhỏ kéo dài cũng làm chất của vật thay đổi
+D. Phủ định biện chứng của đá bằng nước
+Đáp án: C
+
 ## Question 12
-Câu hỏi: Jeremy Bentham và John Stuart Mill là đại diện tiêu biểu của học thuyết đạo đức nào?
-A. Đức đức (virtue ethics)
-B. Thực dụng / công lợi (utilitarianism)
-C. Nghĩa vụ (deontology)
-D. Hiện sinh
+Câu hỏi: "Mưa dầm thấm lâu" mô tả kiểu biến đổi nào?
+A. Mâu thuẫn nội tại bộc lộ đột ngột
+B. Tích luỹ lượng từ từ, kéo dài, đến lúc chất sẽ đổi
+C. Bước nhảy không cần quá trình tích luỹ
+D. Chất quyết định toàn bộ lượng
 Đáp án: B
 
 ## Question 13
-Câu hỏi: David Hume nghi ngờ mối liên hệ nhân quả bằng lập luận nào?
-A. Chúng ta chỉ thấy tính thường liên tục (constant conjunction), không quan sát được "nhân" bắt buộc
-B. Nhân quả là ảo giác của giác quan
-C. Nhân quả chỉ tồn tại trong toán học
-D. Nhân quả do Thượng đế quyết định
-Đáp án: A
+Câu hỏi: "Chín quá hoá nẫu" cho thấy điều gì?
+A. Chất tự sinh ra mà không cần lượng
+B. Mâu thuẫn giữa chín và nẫu tạo ra cái mới
+C. Phủ định sạch trơn trái cây ban đầu
+D. Lượng vượt quá độ thì chất sẽ chuyển sang chiều xấu
+Đáp án: D
 
 ## Question 14
-Câu hỏi: Hegel mô tả quá trình phát triển của tinh thần/tư tưởng bằng ba giai đoạn nào?
-A. Thân – Tâm – Thần
-B. Chính – Phủ – Hợp (thesis – antithesis – synthesis)
-C. Cảm giác – Trí tưởng tượng – Lý tính
-D. Tự nhiên – Xã hội – Vũ trụ
-Đáp án: B
+Câu hỏi: "Già néo đứt dây" cảnh báo điều gì?
+A. Lượng vượt quá giới hạn sẽ phá vỡ chất của sự vật
+B. Chất của dây thừng luôn bất biến
+C. Mâu thuẫn giữa lực kéo và dây sinh ra một dây mới
+D. Phủ định biện chứng của lực căng
+Đáp án: A
 
 ## Question 15
-Câu hỏi: Trong Phật giáo sơ kỳ, "vô ngã" (anatta) có nghĩa là gì?
-A. Con người không có đạo đức
-B. Không tồn tại một bản ngã cố định, độc lập, bất biến
-C. Thế giới không tồn tại
-D. Không có luân hồi
-Đáp án: B
+Câu hỏi: "Tham thì thâm" có ý nghĩa gì?
+A. Chất tốt luôn quyết định lượng tốt
+B. Phủ định của phủ định trong lòng tham
+C. Lượng vượt giới hạn làm chất chuyển sang chiều tiêu cực
+D. Mâu thuẫn giữa "tham" và "thâm" là nguồn phát triển
+Đáp án: C
 
 ## Question 16
-Câu hỏi: Aristotle đề xuất "trung đạo" (golden mean) trong đạo đức nghĩa là gì?
-A. Luôn chọn phương án trung bình số học
-B. Đức hạnh là điểm cân bằng giữa hai thái cực thói quen
-C. Từ bỏ mọi ham muốn
-D. Tuân theo mệnh lệnh tuyệt đối
+Câu hỏi: "Cái sảy nảy cái ung" dạy ta điều gì?
+A. Mâu thuẫn lớn xuất hiện đột ngột không nguyên nhân
+B. Tích luỹ nhỏ về lượng có thể tạo ra biến đổi lớn về chất
+C. Chất xấu tự sinh ra chất xấu mà không cần lượng
+D. Bước nhảy không cần điểm nút
 Đáp án: B
 
 ## Question 17
-Câu hỏi: Albert Camus coi "vấn đề then chốt" của hiện sinh là gì?
-A. Sự tồn tại của Thượng đế
-B. Sự phi lý (absurd) giữa con người tìm kiếm ý nghĩa và thế giới im lặng
-C. Sự phát triển của công nghệ
-D. Xung đột giai cấp
-Đáp án: B
+Câu hỏi: "Một cây làm chẳng nên non, ba cây chụm lại nên hòn núi cao" cho thấy:
+A. Chất của núi hoàn toàn không liên quan đến cây
+B. Mâu thuẫn giữa cây và núi tạo ra rừng
+C. Sự gia tăng về lượng sẽ tạo nên chất mới
+D. Phủ định một cây bằng ba cây
+Đáp án: C
 
 ## Question 18
-Câu hỏi: Trong "Năm con đường" (Five Ways), Thomas Aquinas nhằm chứng minh điều gì?
-A. Sự tồn tại của Thượng đế
-B. Tính đúng đắn của dân chủ
-C. Bản chất của không gian
-D. Nguồn gốc ngôn ngữ
+Câu hỏi: "Có chí thì nên" hàm ý điều gì?
+A. Kiên trì tích luỹ về lượng để tạo ra bước nhảy về chất
+B. Ý chí là một dạng vật chất tự sinh
+C. Mâu thuẫn giữa ý chí và hoàn cảnh sinh ra thành công
+D. Phủ định của phủ định trong nỗ lực
 Đáp án: A
 
 ## Question 19
-Câu hỏi: John Locke cho rằng tâm trí con người lúc sinh ra giống như gì?
-A. Bảng đen trắng (tabula rasa)
-B. Máy tính được lập trình sẵn
-C. Bản thể tinh thần vĩnh cửu
-D. Tập hợp các ý niệm bẩm sinh
-Đáp án: A
+Câu hỏi: "Đi một ngày đàng, học một sàng khôn" gắn với nội dung nào?
+A. Mâu thuẫn giữa đi và học sinh ra sự khôn ngoan
+B. Tích luỹ về lượng kinh nghiệm sẽ dẫn đến biến đổi về chất hiểu biết
+C. Chất khôn ngoan có sẵn, không cần tích luỹ
+D. Phủ định biện chứng của sự non nớt
+Đáp án: B
 
 ## Question 20
-Câu hỏi: Trong triết học, "siêu hình học" (metaphysics) chủ yếu nghiên cứu đối tượng nào?
-A. Quy tắc suy luận hình thức
-B. Bản thể, thực tại, tồn tại, nguyên nhân đầu tiên
-C. Cảm xúc thẩm mỹ
-D. Cấu trúc xã hội
-Đáp án: B
+Câu hỏi: "Trăm hay không bằng tay quen" thể hiện điều gì?
+A. Lượng và chất là hai phạm trù hoàn toàn độc lập
+B. Chất kỹ năng có sẵn từ khi sinh ra
+C. Mâu thuẫn giữa lý thuyết và thực hành tự triệt tiêu
+D. Tích luỹ về lượng qua luyện tập sẽ làm chất kỹ năng thay đổi
+Đáp án: D
 
 ## Question 21
-Câu hỏi: Trường phái Khắc kỷ (Stoicism) khuyên con người nên đối diện với ngoại cảnh như thế nào?
-A. Phản kháng mọi hoàn cảnh bằng bạo lực
-B. Phân biệt điều trong tầm kiểm soát và chấp nhận điều ngoài tầm kiểm soát bằng lý tính
-C. Rút lui hoàn toàn khỏi xã hội
-D. Theo đuổi khoái lạc tối đa
-Đáp án: B
+Câu hỏi: "Dục tốc bất đạt" khuyên ta điều gì?
+A. Không được đốt cháy giai đoạn, phải tích luỹ đủ lượng mới có chất mới
+B. Phải làm thật nhanh để vượt điểm nút
+C. Bước nhảy luôn đến đột ngột không cần chuẩn bị
+D. Chất quyết định mọi tốc độ vận động
+Đáp án: A
 
 ## Question 22
-Câu hỏi: "Nguyên lý về hại ích" (harm principle) của John Stuart Mill nhấn mạnh điều gì?
-A. Nhà nước có quyền kiểm soát mọi hành vi
-B. Chỉ được can thiệp vào tự do cá nhân khi gây hại cho người khác
-C. Hạnh phúc là mục tiêu duy nhất của khoa học
-D. Đạo đức không cần lý do
-Đáp án: B
+Câu hỏi: "Một con sâu làm rầu nồi canh" cho thấy:
+A. Mâu thuẫn giữa sâu và canh sinh ra một chất mới
+B. Chất của nồi canh bất biến dù có thêm sâu
+C. Một lượng rất nhỏ cũng đủ làm chất của cả nồi canh thay đổi
+D. Phủ định biện chứng của nồi canh
+Đáp án: C
 
 ## Question 23
-Câu hỏi: Martin Heidegger đặt câu hỏi nền tảng trong triết học hiện đại là gì?
-A. "Ý nghĩa của công bằng là gì?"
-B. "Ý nghĩa của Tồn tại là gì?"
-C. "Làm sao tính được hạnh phúc?"
-D. "Ai là người cai trị hợp pháp?"
+Câu hỏi: "Thất bại là mẹ thành công" hàm ý gì?
+A. Phủ định sạch trơn của thất bại
+B. Tích luỹ về lượng kinh nghiệm sẽ tạo ra bước nhảy về chất thành công
+C. Mâu thuẫn giữa thất bại và thành công tự triệt tiêu
+D. Chất thành công có sẵn trong mọi thất bại
 Đáp án: B
 
 ## Question 24
-Câu hỏi: Trong triết học phân tích, Ludwig Wittgenstein (giai đoạn sau) cho rằng triết học chủ yếu liên quan đến gì?
-A. Cấu trúc vật chất vi mô
-B. Cách dùng ngôn ngữ trong các "trò chơi ngôn ngữ" 
-C. Lịch sử giai cấp
-D. Trực giác thẩm mỹ
-Đáp án: B
+Câu hỏi: Hình ảnh "giọt nước tràn ly" trong đời sống ám chỉ khái niệm triết học nào?
+A. Bước nhảy đột biến không cần tích luỹ
+B. Chất của cái ly thay đổi liên tục
+C. Mâu thuẫn nội tại giữa ly và nước
+D. Điểm nút – nơi một lượng nhỏ cuối cùng tạo bước nhảy về chất
+Đáp án: D
 
 ## Question 25
-Câu hỏi: "Bài tượng trưng hang động" của Plato nhằm minh họa luận điểm nào?
-A. Con người chỉ thấy bóng/ảnh, còn chân lý đòi hỏi bước ra ánh sáng lý tính
-B. Nhà nước phải do một vị vua tuyệt đối
-C. Thiên nhiên luôn thiện lành
-D. Khoa học là nguồn duy nhất của tri thức
-Đáp án: A
+Câu hỏi: Đun nước, khi đạt 100°C nước sôi và bốc hơi. Điều này minh hoạ:
+A. Chất của nước thay đổi liên tục theo từng độ tăng
+B. Mâu thuẫn giữa nóng và lạnh sinh ra hơi
+C. Khi lượng đạt điểm nút thì chất chuyển sang trạng thái mới
+D. Phủ định biện chứng của nước lỏng bằng hơi nước
+Đáp án: C
 
 ## Question 26
-Câu hỏi: Spinoza coi Thượng đế và Thiên nhiên có mối quan hệ như thế nào?
-A. Thượng đế tạo ra thiên nhiên từ hư vô
-B. Deus sive Natura — Thượng đế hay Thiên nhiên 
-C. Thượng đế và thiên nhiên hoàn toàn đối lập
-D. Thiên nhiên không tồn tại
-Đáp án: B
+Câu hỏi: Học sinh học suốt 12 năm phổ thông để đỗ kỳ thi tốt nghiệp. Việc đỗ tốt nghiệp là:
+A. Bước nhảy về chất sau quá trình tích luỹ lượng trong nhiều năm
+B. Sự may mắn ngẫu nhiên, không thuộc quy luật biện chứng
+C. Phủ định sạch trơn 12 năm phổ thông
+D. Chất sinh viên có sẵn từ lớp 1
+Đáp án: A
 
 ## Question 27
-Câu hỏi: Trong đạo đức Aristotle, "eudaimonia" thường được dịch là gì?
-A. Khoái lạc nhất thời
-B. Hạnh phúc / sự lại chất sống tốt
-C. Tuân thủ luật pháp
-D. Giàu có vật chất
+Câu hỏi: Hai người yêu nhau nhiều năm rồi cưới nhau. Đám cưới là:
+A. Mâu thuẫn giữa "yêu" và "cưới" tự triệt tiêu
+B. Bước nhảy về chất trong quan hệ sau khi lượng tình cảm đã đủ
+C. Phủ định toàn bộ tình yêu trước đó
+D. Chất hôn nhân tồn tại độc lập với lượng tình cảm
 Đáp án: B
 
 ## Question 28
-Câu hỏi: "Nghi hoặc phương pháp" (methodic doubt) của Descartes nhằm mục đích gì?
-A. Từ chối mọi tri thức khoa học
-B. Loại bỏ dần những gì có thể nghi ngờ để tìm nền tảng chắc chắn cho tri thức
-C. Chứng minh không có chân lý
-D. Bảo vệ quyền lực giáo hội
-Đáp án: B
+Câu hỏi: Một cặp đôi cãi vặt nhiều năm rồi ly hôn. Ly hôn là biểu hiện của:
+A. Chất hôn nhân tự phủ định mà không cần lượng
+B. Sự cố ngẫu nhiên không thuộc quy luật biện chứng
+C. Lượng mâu thuẫn nhỏ tích luỹ vượt điểm nút tạo bước nhảy
+D. Phủ định của phủ định trong tình cảm vợ chồng
+Đáp án: C
 
 ## Question 29
-Câu hỏi: Trong triết học Đông Á, Mencius (Mạnh Tử) cho rằng bản tính con người vốn có gì?
-A. Thiện (lòng thương, xấu hổ, tôn kính, đúng sai)
-B. Ác bẩm sinh
-C. Trung tính hoàn toàn
-D. Chỉ ham muốn vật chất
+Câu hỏi: Một bạn trẻ muốn 1 tháng giảm 20kg, ép cân cực đoan rồi nhập viện. Sai lầm của bạn này là:
+A. Nóng vội, đốt cháy giai đoạn, không tôn trọng quá trình tích luỹ về lượng
+B. Tôn trọng đúng quy luật biện chứng
+C. Phủ định biện chứng của cơ thể béo phì
+D. Mâu thuẫn giữa ăn và nhịn là nguồn gốc của thành công
 Đáp án: A
 
 ## Question 30
-Câu hỏi: "Chủ nghĩa thực dụng" (pragmatism) của William James nhấn mạnh tiêu chí nào của chân lý?
-A. Khả năng logic thuần túy
-B. Tính hữu ích, hệ quả trong trải nghiệm và hành động
-C. Sự truyền thống tôn giáo
-D. Tính bất biến siêu hình
-Đáp án: B
+Câu hỏi: Bài học vận dụng đúng đắn nhất từ quy luật lượng – chất là gì?
+A. Cứ chờ thời, không cần cố gắng, mọi việc tự đến
+B. Bỏ qua quá trình, chỉ quan tâm kết quả cuối cùng
+C. Phải có kết quả ngay lập tức, không cần tích luỹ
+D. Kiên trì tích luỹ về lượng mỗi ngày, không nóng vội cũng không bảo thủ; khi đủ điều kiện thì mạnh dạn thực hiện bước nhảy về chất
+Đáp án: D
